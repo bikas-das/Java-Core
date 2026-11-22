@@ -19,6 +19,14 @@ class Square extends Shape {
     @Override
     void draw() {
         System.out.println("Drawing a Squre");
+
+    }
+
+    void extraMethod() {
+        System.out.println("inside extr method....");
+//        draw();
+        super.draw();
+        System.out.println("call extra...");
     }
 }
 
@@ -28,7 +36,10 @@ public class Main_3 {
 
         s = new Circle();
         s.draw();
-        s = new Square();
+        s = new Square();         //    s.extraMethod() not accessble......
         s.draw();
+
+        Square sq = new Square();
+        sq.extraMethod();
     }
 }

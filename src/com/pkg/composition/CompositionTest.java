@@ -22,11 +22,13 @@ class Child extends Parent {
 
     @Override
     public String getMessage() {
-        return this.parent.getMessage();
+//        return this.parent.getMessage();
+        return super.getMessage();
     }
 
     public String getThatData() {
         return this.parent.getMessage();
+
 
     }
 
@@ -38,7 +40,7 @@ public class CompositionTest {
         p1.setMessage("hi from parent...");
 
         Child c1 = new Child(p1);
-//        System.out.println(c1.getMessage());
+        System.out.println(c1.getMessage());
         var res = c1.getThatData();
         System.out.println(res);
 
