@@ -1,4 +1,4 @@
-package com.pkg;
+package com.pkg.statictest;
 
 class Emloyee {
     private String empName;
@@ -34,7 +34,7 @@ class Emloyee {
 
 }
 
-public class MainTest {
+ class MainTest1 {
     public static void main(String[] args) {
 
         Emloyee emp = new Emloyee();
