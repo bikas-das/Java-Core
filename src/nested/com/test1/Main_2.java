@@ -10,7 +10,7 @@ class Person1{
 
     class Person2{
 
-        void getDetals(){
+        void getDetails(){
             details();
             System.out.println(userName);
         }
@@ -22,6 +22,6 @@ public class Main_2 {
 
         Person1 p1 = new Person1();
         Person1.Person2 p2 = p1.new Person2();
-        p2.getDetals();
+        p2.getDetails();
     }
 }

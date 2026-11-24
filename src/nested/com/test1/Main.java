@@ -4,16 +4,16 @@ class Computer{
     static private String modelName = "lenovo";
     private int price;
 
-    static void dispalay(){
+    static void display(){
         System.out.println("model name : " + modelName
         );
     }
 
-    static class Cpu{
+    static class Cpu {
 
-        void getData(){
+        void getData() {
             System.out.println("accessing variable : " + modelName);
-            dispalay();
+            display();
         }
 
     }
