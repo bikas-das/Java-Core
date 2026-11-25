@@ -1,4 +1,4 @@
-package com.pkg.test.issues;
+package com.pkg.test.issues.diamond;
 
 interface NewDevice{
     default void turnOn(){

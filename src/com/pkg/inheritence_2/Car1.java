@@ -2,15 +2,15 @@ package com.pkg.inheritence_2;
 
 public class Car1 extends Vehicle1 {
 
-    private String braandName;
+    private String brandName;
     private int price;
 
     public String getBraandName() {
-        return braandName;
+        return brandName;
     }
 
     public void setBraandName(String braandName) {
-        this.braandName = braandName;
+        this.brandName = braandName;
     }
 
     public int getPrice() {
