@@ -4,7 +4,13 @@ public class Main_1 {
     public static void main(String[] args) {
         Integer a1 = 200;
         Integer a2 = 200;
+
         System.out.println("o/p -> 1 : " + (a1 == a2));
+        System.out.println("o/p-> 1.0 : " + (a1.equals(a2)));
+
+        Integer a0 = 100;
+        Integer b0 = 100;
+        System.out.println("o/p-> 1.1 : " + (a0.equals(b0)));
 
         Integer b1 = Integer.valueOf(100);
         Integer b2 = Integer.valueOf(100);
@@ -17,14 +23,18 @@ public class Main_1 {
         System.out.println("o/p -> 4 : " + (c1.equals(c2))); // returns c1.intValue() and same for c2...
         System.out.println("______________________________________________");
 
+
         String s1 = "bikash";
         String s2 = "bikash";
         System.out.println("o/p -> 5 : " + (s1 == s2)); // compares the address and belongs to same address return true
-
+        System.out.println("o/p -> 5.1 : " + (s1.equals(s2)));
         String s3 = new String("bikash");
         String s4 = new String("bikash");
         System.out.println("o/p -> 6 : " + (s3 == s4)); // compares address and find different return false
         System.out.println("o/p -> 7 : " + (s1.equals(s2))); // here value comparison happens ... not address o/p -- true
+
+        System.out.println("o/p -> 7.1 : " + (s1 == s3));
+        System.out.println("o/p -> 7.2 : " + (s1.equals(s3)));
 
         String literal = "Java";
         String dynamic = new String("Java");
@@ -36,16 +46,23 @@ public class Main_1 {
         String strDynamic = new String("hello");
 
         System.out.println("o/p -> 10 : " + (strLiteral == strDynamic));          // false (pool vs. general heap)
-        System.out.println("o/p -> 11 : " + (strLiteral == dynamic.intern()));  // true (both access the exact same StringTable entry)
-        System.out.println("o/p -> 12 : " + (strLiteral == literal.intern())); // true
+        System.out.println("o/p -> 10.1 : " + (strLiteral.equals(strDynamic)));
 
-        System.out.println("o/p -> 13 : " + (strLiteral.equals(strDynamic)));
+        System.out.println("o/p -> 11 : " + (strLiteral == strDynamic.intern()));  // true (both access the exact same StringTable entry)
 
-        System.out.println("o/p -> 14 : " + (strLiteral.intern().equals(strDynamic)));
+        System.out.println("o/p -> 12 : " + (strLiteral.equals(strDynamic)));
+
+
 
         String t1 = new String("test");
         String t2 = new String("test");
 
-        System.out.println("o/p -> 15 : " + (t1 == t2.intern())); // nothing is creasted on the pool yet...
+        System.out.println("o/p -> 14 : " + (t1 == t2.intern())); // nothing is creasted on the pool yet...
+
+        String fruit1 = new String("apple");
+        String fruit2 = new String("apple");
+        System.out.println("o/p -> 16 : " + (fruit1.intern() == fruit2.intern()));
+
     }
 }
+

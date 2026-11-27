@@ -20,6 +20,8 @@ class BMWCar1 implements ElectricCar1, FuelCar1{
     }
 }
 
+
+
 public class Main_3 {
     public static void main(String[] args) {
    BMWCar1 car = new BMWCar1();

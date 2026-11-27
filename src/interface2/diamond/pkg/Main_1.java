@@ -18,7 +18,6 @@ class PaypalPayment implements Payment {
     @Override
     public void pay() {
         System.out.println("payment via paypal....");
-
     }
 }
 
@@ -27,7 +26,6 @@ public class Main_1 {
 
         Payment p1 = new StripePayment();
         p1.pay();
-
         Payment p2 = new PaypalPayment();
         p2.pay();
 

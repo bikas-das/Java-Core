@@ -33,5 +33,6 @@ public class Main_5 {
     public static void main(String[] args) {
       Phone p1 = new AllinOneDevice();
       p1.start(); // class has the highest priority than interface...
+
     }
 }
