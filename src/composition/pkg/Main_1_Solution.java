@@ -88,7 +88,7 @@ class Iphone1 {
     }
 }
 
-public class Solution_1 {
+public class Main_1_Solution {
     public static void main(String[] args) {
         PixelPhone1 p1 = new PixelPhone1(5, "m123", "p123");
         p1.getHarddwareStuff();
