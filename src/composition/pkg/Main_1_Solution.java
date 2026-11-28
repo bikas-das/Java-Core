@@ -5,10 +5,6 @@ class Phone1 {
     String ram;
     String processor;
 
-    public Phone1() {
-
-    }
-
     public Phone1(int size, String ram, String processor) {
         this.size = size;
         this.ram = ram;
@@ -93,7 +89,7 @@ public class Main_1_Solution {
         PixelPhone1 p1 = new PixelPhone1(5, "m123", "p123");
         p1.getHarddwareStuff();
         System.out.println("-----------------");
-        SamsungPhone1 m1 = new SamsungPhone1(6, "m123", "p123");
+        SamsungPhone1 m1 = new SamsungPhone1(6, "m123", "s123");
         m1.getHarddwareStuff();
         System.out.println("-----------------");
 
